@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import Card from './components/Card';
+import Cards from './components/Cards';
 
 function App() {
 
@@ -38,13 +39,13 @@ function App() {
         active &&
         <div className="parent h-screen md:grid md:grid-cols-2 ">
           <Sidebar />
-          <Card />
+          <Cards />
         </div>
       }
       {
         !active &&
         <div className='flex justify-center items-center'>
-          <Card />
+          <Cards/>
         </div>
       }
 
